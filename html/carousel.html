@@ -1,0 +1,82 @@
+<div id="bannerHome">
+    <div class="mySlide">
+        <picture>
+            <source srcset="img/woman-happy-sunny-1400.jpg" media="(min-width: 1200px)">
+            <source srcset="img/woman-happy-sunny-1000.jpg" media="(min-width: 800px)">
+            <source srcset="img/woman-happy-sunny-700.jpg" media="(min-width: 500px)">
+            <img src="img/woman-happy-sunny-350.jpg" alt="Clean lounge room area">
+        </picture>
+        <div class="overlay">
+            <h1>Grow your weatlh</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra iaculis eros vel malesuada. Sed
+                tristique, elit pellentesque sodales sollicitudin, risus ipsum ornare justo, auctor efficitur turpis
+                nibh
+                pulvinar lorem. Morbi vitae sapien sit amet turpis facilisis sagittis feugiat molestie tortor.
+            </p>
+            <button class="btnWhite" onclick="location.href='personal-bank-account.php'">
+                Find out more
+            </button>
+        </div>
+    </div>
+    <div class="mySlide">
+        <picture>
+            <source srcset="img/girl-holiday-party-1400.jpg" media="(min-width: 1200px)">
+            <source srcset="img/girl-holiday-party-1000.jpg" media="(min-width: 800px)">
+            <source srcset="img/girl-holiday-party-700.jpg" media="(min-width: 500px)">
+            <img src="img/girl-holiday-party-350.jpg" alt="Clean lounge room area">
+        </picture>
+        <div class="overlay">
+            <h1>Travel carefree with insurance</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra iaculis eros vel malesuada. Sed
+                tristique, elit pellentesque sodales sollicitudin, risus ipsum ornare justo, auctor efficitur turpis
+                nibh
+                pulvinar lorem. Morbi vitae sapien sit amet turpis facilisis sagittis feugiat molestie tortor.
+            </p>
+            <button class="btnWhite" onclick="location.href='index.php'">
+                Find out more
+            </button>
+        </div>
+    </div>
+    <div class="mySlide">
+        <picture>
+            <source srcset="img/contruction-meeting-1400.jpg" media="(min-width: 1200px)">
+            <source srcset="img/contruction-meeting-1000.jpg" media="(min-width: 800px)">
+            <source srcset="img/contruction-meeting-700.jpg" media="(min-width: 500px)">
+            <img src="img/contruction-meeting-350 copy.jpg" alt="Clean lounge room area">
+        </picture>
+        <div class="overlay">
+            <h1>Expand your business to new levels</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra iaculis eros vel malesuada. Sed
+                tristique, elit pellentesque sodales sollicitudin, risus ipsum ornare justo, auctor efficitur turpis
+                nibh
+                pulvinar lorem. Morbi vitae sapien sit amet turpis facilisis sagittis feugiat molestie tortor.
+            </p>
+            <button class="btnWhite" onclick="location.href='index.php'">
+                Find out more
+            </button>
+        </div>
+    </div>
+
+</div>
+<script>
+    //image carousel
+    let slideIndex = 0
+    showSlides()
+
+    function showSlides() {
+        let i
+        let slides = document.getElementsByClassName("mySlide")
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none"
+        }
+        slideIndex++
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block"
+        setTimeout(showSlides, 10000) // Change image every 10 seconds
+    }
+</script>
